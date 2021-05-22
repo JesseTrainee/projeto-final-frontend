@@ -1,0 +1,42 @@
+/* body .container{
+    margin:0;
+ } */
+
+.container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.nav-item{
+    padding-left:10px;
+}
+.container .navbar{
+    padding:0;
+}
+.texto-imagem p{
+    padding:0;
+    margin-top: 10%;
+}
+.titulo{
+    display:flex;
+    justify-content: flex-start;
+}
+.container .texto-imagem{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*mudar esta fonte */
+.container h1{
+     font-family: nehua; 
+}
+
+.texto-imagem img{
+    width: 40%;
+    height:40%;
+}
+
+
+  

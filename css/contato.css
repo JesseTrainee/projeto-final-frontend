@@ -1,0 +1,9 @@
+.container .form-group.row{
+    width:60%;
+    padding:10px;
+    border-radius: 4px;
+    background-color: #ddd;   
+}
+.container button{
+    margin-top: 20px;
+}

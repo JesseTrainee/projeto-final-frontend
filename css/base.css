@@ -1,0 +1,38 @@
+/* base */
+
+@font-face{
+    
+        font-family:neucha;
+        src: url("../font/neucha.otf");
+     
+}
+
+.nav-item img{
+    height: 30px;
+    width: 30px;
+    
+}
+.container-fluid{
+    font-size: 25px;
+}
+.navbar-brand img{
+    height:70px;
+    width: 70px;
+   
+}
+
+.header img{
+    width: 100%;
+    height: 100px;   
+    
+}
+.navbar.bg-light {
+    border:none;
+}
+
+hr{
+    color:black;
+}
+
+
+/* fim da base */
