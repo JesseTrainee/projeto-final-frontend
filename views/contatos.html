@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
 
-    <link rel="stylesheet" href="../css/base.css">
+    
     <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
 </head>
 <body>
     <div class="header">
         <img src="/icones/banner.png" alt="">
     </div>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
   
@@ -51,99 +53,91 @@
       </div>
     </nav>
 
+    <div class="container text-center">
+    <h1>Entre em contato:</h1>
     <hr>
+    </div>
 
+    <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="container">
+        <div class="card " style="width:400px">
+          <img class="card-img-top" src="../icones/perfil.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Jesse</h4>
+            <p class="card-text">24 anos, ilustradora digital.</p>
+            <a href="#" class="icon"><img src="../icones/deviantart.png" alt="">DeviantArt: https://www.deviantart.com/</a>
+            <br>
+            <a href="#" class="icon"><img src="../icones/call.png" alt="">Telefone:(21)9999-9999</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
       <div class="container">
         <form>
             <fieldset>
-              <legend>Nos contate:</legend>
+              
               <div class="form-group row">
-
-                <div class="form-group">
+                
+                <div class="form-container">                  
                     <label for="nome" class="form-label mt-4">Nome</label>
-                    <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" placeholder="Digite seu nome:">
+                    <input type="text" class="form-control" id="nome" aria-describedby="nomeHelp" placeholder="Digite seu nome:" required>
                    </div>
 
-                 <div class="form-group">
+                 <div class="form-container">
                     <label for="email" class="form-label mt-4">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Digite seu email.">
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email." required>
                   </div>
 
-                  <div class="form-group">
-                    <label for="textarea" class="form-label mt-4">Sugestão</label>
+                  <div class="form-container">
+                    <label for="textarea" class="form-label mt-4" required>Descrição do pedido:</label>
                     <textarea class="form-control" id="textarea" rows="3"></textarea>
                   </div> 
-                  <div class="container">
-                    <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+                  <div class="form-container">
+                    <button type="submit" id="botao-enviar" onclick="enviar()" class="btn btn-primary btn-lg">Enviar</button>
                   </div>
-              </div>
-              
+              </div>              
           </form>
         </div>
-        
-        <div class="text-center">
-          <p>Turma dos Feras Serratec</p>
-          <p>Code by Jesse 2021</p>
-        </div>
-      
-      <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Pinterest-->
-          <a class="pin-ic">
-            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-          </a>
         </div>
       </div>
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row-->
+        <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+ 
+  <div class="container p-4">
+    <!-- Section: Redes Sociais -->
+    <section class="mb-4">
+      <p>Turma dos Feras Serratec</p>
+      <a class="btn btn-floating m-1" href="#!" role="button"
+        ><img src="../icones/instagram.png" alt=""></a>
 
+        <a class="btn btn-floating m-1" href="#!" role="button"
+        ><img src="../icones/facebook.png" alt=""></a>
+
+        <a class="btn btn-floating m-1" href="#!" role="button"
+        ><img src="../icones/twitter.png" alt=""></a>
+    </section>
+    <!-- Section: Social media -->
+    </section>
+    <!-- Section: Links -->
   </div>
-  <!-- Footer Elements -->
+  <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Code by Jesse 2021
   </div>
   <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
-       
-
-        
+   
+        <script src="../scripts/contatos.js"></script>
+        <script src="/scripts/bootstrap.bundle.min.js"></script>  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

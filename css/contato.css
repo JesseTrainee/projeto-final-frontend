@@ -1,9 +1,34 @@
 .container .form-group.row{
-    width:60%;
-    padding:10px;
+    /* width:60%; */
     border-radius: 4px;
-    background-color: #ddd;   
+    background-color:var(--cor-fundo);
 }
+.container .card{
+    background-color:var(--cor-fundo);
+    border:none;    
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    margin:10px;
+}
+
 .container button{
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row .col{
+    max-width: max-content;
+}
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+/* .container h2{
+    justify-content: ;
+} */
+.container{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

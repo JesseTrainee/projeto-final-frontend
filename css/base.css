@@ -1,10 +1,19 @@
 /* base */
 
+:root{
+    --cor-fundo:#a3b8ca ;
+    --cor-rodape:#b3c2cf;
+}
 @font-face{
-    
-        font-family:neucha;
-        src: url("../font/neucha.otf");
-     
+        src: url(../font/neucha.otf);
+        font-family: neucha;
+}
+p,h1,h2,h3,h4{
+    font-family: neucha;
+    font-weight: 700;
+}
+p{
+    font-size: medium;
 }
 
 .nav-item img{
@@ -29,9 +38,29 @@
 .navbar.bg-light {
     border:none;
 }
-
-hr{
-    color:black;
+.icones img{
+    height:30px;
+    width: 30px;
+}
+.footer{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    background-color: var(--cor-rodape);
+    
+}
+section.mb-4{
+    padding: 0;
+}
+.bg-dark{
+    background-color: var(--cor-rodape) !important
+}
+section img{
+    width: 40px;
+    height: 40px;
+    
 }
 
 

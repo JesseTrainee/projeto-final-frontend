@@ -1,6 +1,7 @@
 /* body  > .container{
     margin:0;
  } */
+
 .container{
     display:flex;
     flex-direction: column;
@@ -16,27 +17,13 @@
 .nav-item{
     padding-left:10px;    
 }
-
-.imagens{
-    display: flex;
-    flex-direction: row;
-}
-/*mudar esta fonte */
 .container h1{
-     font-family: nehua; 
+     font-family: neucha; 
 }
 
 .header img{
     width: 100%;
     height: 100px;
-    
-}
-.separador img{
-    width: 100%;
-}
-.nav-item img{
-    height: 30px;
-    width: 30px;
     
 }
 
@@ -59,11 +46,18 @@
   .container .header > img{
     margin-top:0;
 }
-.text-center{
-    margin-top: 40px;
-}
+
 .container>.cabecalho{
     margin:0;
     
 }
-  
+
+.col label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button{
+    border:none;
+    background-color: white;
+}
